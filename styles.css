@@ -71,3 +71,42 @@ body, html {
   background-color: #BCAC7C;
 }
 
+/* Contact Form */
+
+.wave-form {
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%;
+}
+
+.wave-form p {
+  padding: 0px 20px;
+}
+
+input:focus {
+  border-color: aqua;
+}
+
+/* Footer */
+
+footer {
+  padding: 0px 200px;
+  background-color: #010213;
+}
+
+footer div {
+  text-align: left;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: azure;
+}
+
+footer form input {
+  line-height: .5;
+}
