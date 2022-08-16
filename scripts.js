@@ -7,8 +7,6 @@
 window.onload = function(){
     console.log("Waves!!!")
     california();
-    filters();
-    whichstate();
 
 }
 /*
@@ -45,6 +43,7 @@ function whichstate(){
 
 function florida(){
   $("#beach-listings").empty()
+  $("#state-header").empty()
 
 
   $.ajax({
@@ -62,10 +61,10 @@ function florida(){
           let image = "images/sample-beach1a.jpg"
           console.log(result.features[0].attributes.BEACH_OR_CITY_NAME)
           console.log(result.features[0].attributes)
+          $("#state-header").html(`<h3>Florida Beaches<h3>`)
           for(let i = 0; i < 50; i++){
               count++;
               $("#beach-listings").append(`
-
               <div class="col-12 col-sm-4 col-lg-3 beach-item">
                 <div class="card border-0">
                   <img class="card-img-top beach-img " src=${image}>
@@ -99,6 +98,7 @@ function florida(){
 function california(){
   $("#beach-listings").empty()
   console.log("TEST 1")
+  $("#state-header").empty()
 
 
 
@@ -113,6 +113,8 @@ function california(){
           $(".loader").hide()
       },
       success: function(result){
+        $("#state-header").html(`<h3>California Beaches<h3>`)
+
 
           console.log("TEST 2")
 
@@ -132,6 +134,7 @@ function california(){
 
                   count++;
                   $("#beach-listings").append(`
+
                   <div class="col-12 col-sm-4 col-lg-3 beach-item">
 
             <div class="card border-0">
