@@ -6,28 +6,18 @@
 
 window.onload = function(){
     console.log("Waves!!!")
+    california();
     filters();
     whichstate();
 
-/*
-    $('#demo').pagination({
-      dataSource: [1, 2, 3, 4, 5, 6, 7, ... , 195],
-      callback: function(data, pagination) {
-          // template method of yourself
-          var html = template(data);
-          dataContainer.html(html);
-      }
-    })
-    */
-
 }
-
+/*
 function filters(){
   console.log("filters")
 
           $("#filters").append(`
                           <div class="form-group col-12 col-lg-4 text-white ">
-                            <label for="topicSelect"><b>TOPIC</b></label>
+                            <label for="topicSelect"><h3>Select a State</h3></label>
                             <div class="border-bottom mb-0 mb-lg-3">
                                 <select onchange="whichstate()" class="form-control border-0" id="stateSelect">
                                 <option value=california>California</option>
@@ -38,15 +28,20 @@ function filters(){
           console.log($("stateSelect").value)
 
 }
+
+
 function whichstate(){
-  console.log(document.getElementById("stateSelect").value)
+  console.log("515345" + $(".florida-btn").attr("value"))
+
+  console.log("fdfaf" + document.getElementById("stateSelect").attr("value"))
+  //document.getElementById("stateSelect").value = 
   if (document.getElementById("stateSelect").value == "california"){
     california();
   } else if (document.getElementById("stateSelect").value == "florida"){
     florida()
   }
 }
-
+*/
 
 function florida(){
   $("#beach-listings").empty()
@@ -75,7 +70,7 @@ function florida(){
                 <div class="card border-0">
                   <img class="card-img-top beach-img " src=${image}>
                       <div class="card-info">
-                          <h3 class="card-title">${result.features[i].attributes.BEACH_OR_CITY_NAME}</h4>
+                          <h3 class="card-title">${result.features[i].attributes.BEACH_OR_CITY_NAME}</h3>
                           <p class="text-royal pl-3 pt-2">${result.features[i].attributes.LOCATION_ADDRESS}</p>
                       </div>
 
@@ -125,7 +120,7 @@ function california(){
           let count = 0;
           let image;
 
-          for(let i = 0; i < 200; i++){
+          for(let i = 0; i < 130; i++){
             image = "images/sample-beach1a.jpg";
 
             if (result[i].Photo_1){
@@ -142,7 +137,7 @@ function california(){
             <div class="card border-0">
                 <img class="card-img-top beach-img " src=${image}>
                 <div class="card-info">
-                    <h3 class="card-title">${result[i].NameMobileWeb}</h4>
+                    <h3 class="card-title">${result[i].NameMobileWeb}</h3>
                       <p class="text-royal pl-3 pt-2">${result[i].LocationMobileWeb}</p>
                 </div>
 
@@ -164,10 +159,8 @@ function california(){
 
 
 function getPageList(totalPages, page, maxLength){
-  console.log("TEST 3")
 
   function range(start, end){
-      console.log("TEST 4")
 
     return Array.from(Array(end - start + 1), (_, i) => i + start);
   }
@@ -193,14 +186,12 @@ function getPageList(totalPages, page, maxLength){
 function beachPagination(count){
 
   var numberOfItems = count;
-  var limitPerPage = 12; //How many card items visible per a page
+  var limitPerPage = 8; //How many card items visible per a page
   var totalPages = Math.ceil(numberOfItems / limitPerPage);
-  console.log("TEST 5")
   var paginationSize = 7; //How many page elements visible in the pagination
   var currentPage;
 
   function showPage(whichPage){
-      console.log("TEST 6")
 
     if(whichPage < 1 || whichPage > totalPages) return false;
 

@@ -110,3 +110,216 @@ footer a {
 footer form input {
   line-height: .5;
 }
+
+
+/* waves page */
+
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(219, 18, 18, 0.623);
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+  url("/images/waves-hero1a.jpg");
+  min-height: 25%;
+}
+.wave-info{
+  background-color: rgb(81, 143, 224);
+  height: 150px;
+}
+.wave-info-inner{
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  padding-top: 30px;
+
+}
+
+.filter{
+  background-color: #ffecd9;
+  height: 100px;
+
+}
+#filters{
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+
+}
+#stateSelect{
+  -webkit-appearance: none;
+  background: -webkit-gradient(to right,hsl(149, 40%, 49%) 0%,#fceeb5 50%,#ee786e 100%);
+  background: linear-gradient(to right,hsl(149, 40%, 49%) 0%,#fceeb5 50%,#ee786e 100%);
+  background-size: 500%;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  color: #fff;
+  cursor: pointer;
+  font: 1.2em Raleway, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 3.5rem;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 110px;
+
+}
+#stateSelect:active{
+  background-color: #ee786e;
+}
+.california-btn{
+  margin-right: 20px;
+
+}
+button:hover{
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+
+  
+}
+@keyframes gradient{
+  0% {
+    background-position: 0% 50%;
+  }
+  100%{
+    background-position: 100%;
+  }
+}
+  
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+.beaches{
+background-color: #ffecd9;
+padding-bottom: 30px;
+
+}
+#beach-listings{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 30px;
+}
+.card-info{
+position: relative;
+color: #222;
+padding: 10px 20px 20px;
+}
+
+.card-img-top{
+max-height: 200px;
+}
+
+.beach-img{
+  width: 400px !important;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.pagination{
+text-align:center;
+margin: 30px 30px 60px;
+user-select:none;
+}
+.pagination li {
+display: inline-block;
+margin: 5px;
+box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+.pagination li a {
+color: #000;
+text-decoration: none;
+font-size: 1.2em;
+line-height: 45px;
+}
+
+.previous-page, .next-page{
+background: #3bafc4;
+width: 80px;
+border-radius: 45px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+.previous-page:hover{
+transform: translateX(-5px);
+
+}
+.next-page:hover{
+transform: translateX(5px);
+
+}
+.current-page, .dots{
+background: #fff;
+width: 45px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.active {
+background: #38cae4;
+}
+
+.disable {
+background: #ccc;
+}
+
+li.page-item.next-page a.page-link{
+color: #fff;
+}
+li.page-item.previous-page a.page-link{
+color: #fff;
+}
+li.page-item.current-page.active a.page-link{
+color: #fff;
+}
+
+.card{
+position: relative;
+background: #fff;
+max-width: 325px;
+width: 325px;
+height: auto;
+margin: 25px;
+box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+border-radius: 10px;
+overflow: hidden;
+}
+
+.card:hover{
+box-shadow: none;
+}
+
+.card-info h3{
+font-size: 1.8em;
+font-weight: 800;
+margin-bottom: 5px;
+color: #000;
+}
+h3 {
+  font-size: 1.8em;
+font-weight: 800;
+color:rgb(87, 9, 87);
+}
+h2 {
+  font-size: 2em;
+font-weight: 600;
+color:#fff;
+}

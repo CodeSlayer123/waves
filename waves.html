@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>W3.CSS Template</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="scripts.js"></script>
-    <link rel="stylesheet" href="test.css">
-    <link rel="icon" type="image/png" href="/favicon1a.png"/>
+  <title>Waves For Sale!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- CSS only -->
+  
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./images/wave-favicon.png"/>
     <!-- Jquery -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -22,7 +24,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="/home.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -50,12 +52,11 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="overlay bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+<header class="overlay bgimg-2 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Buy a Wave Today!</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Buy a Wave Today!</span><br>
+    <span class="w3-large">Your life will never be the same again</span>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -66,11 +67,27 @@
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </header>
+<!-- info Section -->
+<section class="wave-info  bg-royal pt-5 align-items-center">
+      <div class="row wave-info-inner">
+            <h2>Choose a beach to buy your wave from!</h2>
+          
+      </div>
+
+</section>
 <!-- filters Section -->
-<section class="filter bg-royal pt-5 align-items-center" style="background-color: blueviolet; height: 200px;">
+<section class="filter  bg-royal pt-5 align-items-center">
     <form class="container row">
-        <div class="row" id="filters">
-                
+        <div class="row " sttopicyle="margin-top: 250px;" id="filters">
+            <div>
+              <div class="form-group  text-white " style="width: 700px; margin-left: -30px;">
+                <label for="topicSelect" style=" margin-left: 10px;"><h3>Select a State</h3></label>
+                <button onclick="california()" class="california-btn" id="stateSelect" value="california">California</button>
+                <button onclick="florida()" class="florida-btn" id="stateSelect" value="florida">Florida</button>
+              </div>
+            </div>
+            
+
         </div>
     </form>
 
@@ -80,7 +97,8 @@
 <!-- beaches Section -->
 <section class="beaches pt-5">
   <div class="beaches-inner d-flex flex-column ">
-    <p class=" text-muted" id="count" style="font-size: 16px; margin-top: 0px;"></p>        
+    <p class=" text-muted" id="count" style="font-size: 16px; margin-top: 0px; padding-left: 110px; padding-top: 50px;
+    "></p>        
     <div class="loader" id="course-loader"></div>
 
     <div class="row" id="beach-listings">
@@ -99,4 +117,22 @@
   <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
 </div>
 </section>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64">
+  <div class="row">
+    <div class="col-5">
+      <h3 class="w3-text-white">WAVE LIFE</h3>
+    </div>
+  </div>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <!-- <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+</footer>
 </body>
