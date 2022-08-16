@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="./images/wave-favicon.png"/>
@@ -19,12 +18,12 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="./home.html#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="./home.html#home" class="w3-bar-item w3-button w3-wide"><img src="./images/wave-favicon.png" style="width: 100px"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="./home.html#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="./home.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="./home.html#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="./home.html#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WAVES</a>
       <a href="./home.html#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="./home.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
@@ -41,7 +40,7 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="./home.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="./home.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="./home.html#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="./home.html#work" onclick="w3_close()" class="w3-bar-item w3-button">WAVES</a>
   <a href="./home.html#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
   <a href="./home.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
@@ -143,7 +142,7 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
         <img src="./images/harrisonford.jpeg" alt="Ford" style="width:100%">
-        <div class="w3-container">
+        <div class="w3-container team-card">
           <h3>Harry Ford</h3>
           <p class="w3-opacity">CEO & Founder</p>
           <p>Harry Ford was born on a surfboard riding down one of the tallest waves to ever form in Portugal.
@@ -156,7 +155,7 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
         <img src="./images/carriefisher.jpg" alt="Carrie Fisher" style="width:100%">
-        <div class="w3-container">
+        <div class="w3-container team-card">
           <h3>Kari Fischer</h3>
           <p class="w3-opacity">Beach Consultant</p>
           <p>Kari Fischer has devoted her life's work to understanding the scientific nature of beaches, shorelines, waves, and most importantly to her, crabs. No one knows more about sand than Kari.</p>
@@ -167,7 +166,7 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
         <img src="./images/markhamill.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
+        <div class="w3-container team-card">
           <h3>Mark Hamlet</h3>
           <p class="w3-opacity">Wave Measurer</p>
           <p>Born with the innate abililty to see numbers, Mark Hamlet can measure anything. Never worry about being scammed on the height of Waves again - Mark once measured the distance to the planet Pluto and back with only a Hasbro telescope.</p>
@@ -178,7 +177,7 @@
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
         <img src="./images/merylstreep.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
+        <div class="w3-container team-card">
           <h3>Drurogoth the Destroyer</h3>
           <p class="w3-opacity">Secretary</p>
           <p>Drurogoth the Destroyer lost her parents on a fatal night to an accidental wave formed off the coast of Great Lake Michigan. She is fueled with a never ending rage in her quest to subdue the Ocean itself.</p>
@@ -302,7 +301,7 @@
           <span class="w3-opacity">per month</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="btn-blue w3-button w3-padding-large" onclick="window.location='/waves.html'">
+          <button class="btn-blue w3-button w3-padding-large" onclick="window.location='./waves.html'">
             Rent My Beach</button>
         </li>
       </ul>
@@ -339,24 +338,24 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-padding-64">
-  <div class="row">
-    <div class="col-5">
+  <div class="columns">
+    <div class="column1">
       <h3 class="w3-text-white">WAVE LIFE</h3>
       <p class="text-muted">WAVES INC. is passionate about two things: Waves, Justice, and Money. Through our enterprise, we hope to bring justice
         to the people wronged by the ocean. We hope to bring safety to those who swim and surf, and through private ownership of
         Waves and beaches, there will finally be an individual able to be brought to court.
       </p>
     </div>
-    <div class="col-1"></div>
-    <div class="col-2">
+    <div class="column-gap"></div>
+    <div class="column2">
       <h3 class="w3-text-white">QUICK LINKS</h3>
       <li><a class="text-muted" href="./home.html#about">ABOUT</a></li>
       <li><a class="text-muted" href="./home.html#team">TEAM</a></li>
-      <li><a class="text-muted" href="./home.html#work">WORK</a></li>
+      <li><a class="text-muted" href="./home.html#work">WAVES</a></li>
       <li><a class="text-muted" href="./home.html#pricing">PRICING</a></li>
       <li><a class="text-muted" href="./home.html#contact">CONTACT</a></li>
     </div>
-    <div class="col-3">
+    <div class="column3">
       <h3 class="w3-text-white">CONTACT US</h3>
       <form>
         <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>

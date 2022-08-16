@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  
   <!-- CSS only -->
   
   <script src="scripts.js"></script>
@@ -24,14 +25,14 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="/home.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="./home.html" class="w3-bar-item w3-button w3-wide"><img src="./images/wave-favicon.png" style="width: 100px"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="./home.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="./home.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="./home.html#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="./home.html#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="./home.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -120,9 +121,31 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-padding-64">
-  <div class="row">
-    <div class="col-5">
+  <div class="columns">
+    <div class="column1">
       <h3 class="w3-text-white">WAVE LIFE</h3>
+      <p class="text-muted">WAVES INC. is passionate about two things: Waves, Justice, and Money. Through our enterprise, we hope to bring justice
+        to the people wronged by the ocean. We hope to bring safety to those who swim and surf, and through private ownership of
+        Waves and beaches, there will finally be an individual able to be brought to court.
+      </p>
+    </div>
+    <div class="column-gap"></div>
+    <div class="column2">
+      <h3 class="w3-text-white">QUICK LINKS</h3>
+      <li><a class="text-muted" href="./home.html#about">ABOUT</a></li>
+      <li><a class="text-muted" href="./home.html#team">TEAM</a></li>
+      <li><a class="text-muted" href="./home.html#work">WORK</a></li>
+      <li><a class="text-muted" href="./home.html#pricing">PRICING</a></li>
+      <li><a class="text-muted" href="./home.html#contact">CONTACT</a></li>
+    </div>
+    <div class="column3">
+      <h3 class="w3-text-white">CONTACT US</h3>
+      <form>
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      </form>
     </div>
   </div>
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
